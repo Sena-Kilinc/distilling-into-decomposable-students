@@ -1,0 +1,5 @@
+# raw data (UCI, CC BY 4.0) - download as described in README.md
+data/raw/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
