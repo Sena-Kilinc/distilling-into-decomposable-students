@@ -2,7 +2,7 @@
 
 *"Knowledge Distillation into Analytically Decomposable Students: Explainable AI via Polynomial Chaos Expansion and HDMR"* Author: Sena Kılınç.
 
-A frozen **LightGBM** teacher is distilled into two interpretable students. Both are evaluated on two real tabular datasets: **Online Shoppers Purchasing Intention** (17 features, binary) and **UCI-HAR** (561 features, 6 classes).
+A frozen LightGBM teacher is distilled into two interpretable students on two real tabular datasets: Online Shoppers Purchasing Intention (17 features, binary) and UCI-HAR (561 features, 6 classes).
 
 | | Student 1 | Student 2 |
 |---|---|---|
@@ -10,7 +10,7 @@ A frozen **LightGBM** teacher is distilled into two interpretable students. Both
 | Target | Teacher logits (binary log-odds or centred multiclass logits) | Teacher probability vector |
 | Explanation | Sobol' S1/ST from the coefficients, plus a covariance (ANCOVA-type) index | Impurity (variance-reduction) importance |
 
-The post-hoc explainer applied to the teacher is **TreeSHAP**.
+The students' explanations are compared with TreeSHAP applied to the teacher.
 
 ## Everything is in one notebook
 
@@ -23,11 +23,11 @@ The post-hoc explainer applied to the teacher is **TreeSHAP**.
 6. bootstrap stability;
 7. figures, tables and a generated summary of key findings.
 
-The notebook is stored **with its outputs**, so the results can be read on GitHub without running anything.
+The notebook is stored with its outputs, so the results can be read on GitHub without running anything.
 
 ## Reproduce
 
-1. **Python ≥ 3.11** (3.13 was used). Install the packages:
+1. **Python ≥ 3.11** (the reported results were produced with 3.12). Install the packages:
    ```bash
    pip install -r requirements.txt
    ```
@@ -40,9 +40,9 @@ The notebook is stored **with its outputs**, so the results can be read on GitHu
    ```bash
    jupyter nbconvert --to notebook --execute --inplace kd_pce_hdmr_distillation.ipynb
    ```
-   It takes about 8 minutes on 2 CPU cores. Outputs are written to `outputs/results/`, `outputs/figures/` and `outputs/tables/`.
+   A full run takes a few minutes on a laptop CPU. Outputs are written to `outputs/results/`, `outputs/figures/` and `outputs/tables/`.
 
-Seeds are fixed. Two complete runs gave identical results in our environment. LightGBM multithreading can cause tiny numerical differences on other hardware.
+Seeds are fixed. A second run on a different machine (Python 3.13, Linux) reproduced every headline number; only a few HAR group-level agreement values and one OSPI seed differed in the second or third decimal, most likely because of LightGBM multithreading and platform differences.
 
 ## Protocol in brief
 
@@ -50,7 +50,7 @@ Seeds are fixed. Two complete runs gave identical results in our environment. Li
   - OSPI: 125 exact duplicates removed before splitting, then a stratified 60/20/20 split.
   - HAR: the official subject-wise split, with 5 training subjects held out for validation.
 - **Teacher:** hyper-parameters chosen on validation, then frozen.
-- **Model selection:** one rule for both students, fixed before testing. Choose the least complex model within 0.005 of the best **validation** macro-F1 against the teacher's labels.
+- **Model selection:** one rule for both students, fixed before testing. Choose the least complex model within 0.005 of the best validation macro-F1 against the teacher's labels.
 - **Evaluation:** every metric is reported on the common test set.
   - label metrics;
   - fidelity: agreement, macro-F1 vs teacher, TV / KL / Brier between probability vectors;
