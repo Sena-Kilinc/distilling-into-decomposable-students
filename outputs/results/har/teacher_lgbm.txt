@@ -34666,7 +34666,7 @@ parameters:
 [num_iterations: 2000]
 [learning_rate: 0.05]
 [num_leaves: 15]
-[num_threads: 2]
+[num_threads: 24]
 [seed: 0]
 [deterministic: 0]
 [force_col_wise: 0]

@@ -125,7 +125,7 @@
   }
  },
  "env": {
-  "python": "3.13.18",
+  "python": "3.12.15",
   "numpy": "2.5.3",
   "sklearn": "1.9.1",
   "lightgbm": "4.7.0",
@@ -134,7 +134,7 @@
  "teacher": {
   "num_leaves": 15,
   "best_iteration": 299,
-  "val_logloss": 0.07892911251974015,
+  "val_logloss": 0.07892911251974004,
   "test": {
    "accuracy": 0.9399389209365456,
    "balanced_accuracy": 0.9376602386364662,
@@ -164,9 +164,9 @@
   "diagnostics": {
    "n_candidate_terms": 2118,
    "n_terms": 352,
-   "max_abs_offdiag_cov": 1.9583889884821026,
+   "max_abs_offdiag_cov": 1.958388988482103,
    "mean_abs_offdiag_cov": 0.10849552895751038,
-   "sum_coef2_over_empirical_var": 4.697322300750166
+   "sum_coef2_over_empirical_var": 4.6973223007468725
   },
   "screen": {
    "n_screened": 30,
@@ -203,271 +203,271 @@
     "088 tBodyAccJerk-mad()-Y"
    ]
   },
-  "alpha": 0.08639404013328474,
-  "logit_r2_test": 0.8600947224730675,
+  "alpha": 0.08639404013328464,
+  "logit_r2_test": 0.8600947224733277,
   "prob_out_of_range": "n/a (logit target, probabilities via sigmoid/softmax)",
   "test_fidelity": {
    "agreement": 0.9395995928062436,
    "macro_f1_vs_teacher": 0.938973341707564,
-   "tv_distance": 0.06181375169335244,
-   "kl_teacher_student": 0.1579720590580407,
-   "brier_to_teacher": 0.0636937706248173
+   "tv_distance": 0.06181375169335219,
+   "kl_teacher_student": 0.15797205905876022,
+   "brier_to_teacher": 0.06369377062482313
   },
   "val_fidelity": {
    "agreement": 0.9728793998845932,
    "macro_f1_vs_teacher": 0.9706735083294175,
-   "tv_distance": 0.03795308075015632,
-   "kl_teacher_student": 0.12990711919925457,
-   "brier_to_teacher": 0.037193666877350526
+   "tv_distance": 0.0379530807501627,
+   "kl_teacher_student": 0.12990711919927453,
+   "brier_to_teacher": 0.03719366687736017
   },
   "test_labels": {
    "accuracy": 0.9426535459789617,
    "balanced_accuracy": 0.9414015743343759,
    "macro_f1": 0.9422991119221834,
-   "brier": 0.09193857475947387,
-   "log_loss": 0.20229896156707197,
+   "brier": 0.09193857475950344,
+   "log_loss": 0.20229896156785915,
    "roc_auc_ovr_macro": 0.9959305242598683
   },
   "path": [
    {
     "n_terms": 3,
-    "alpha": 4.858293901709954,
+    "alpha": 4.8582939017099465,
     "val_macro_f1_vs_teacher": 0.4776441617928639,
     "test_agreement": 0.6057007125890737,
     "test_macro_f1_vs_teacher": 0.5053270115803785,
-    "test_tv_distance": 0.4235655324674306,
-    "test_kl_teacher_student": 0.6582755401231496,
-    "test_brier_to_teacher": 0.41953192238717557
+    "test_tv_distance": 0.42356553246743134,
+    "test_kl_teacher_student": 0.6582755401231506,
+    "test_brier_to_teacher": 0.41953192238717624
    },
    {
     "n_terms": 7,
-    "alpha": 4.010056119733488,
+    "alpha": 4.010056119733481,
     "val_macro_f1_vs_teacher": 0.7485721859285088,
     "test_agreement": 0.7662029182219205,
     "test_macro_f1_vs_teacher": 0.7441642345449105,
-    "test_tv_distance": 0.2550929944189959,
-    "test_kl_teacher_student": 0.4810861954020697,
-    "test_brier_to_teacher": 0.27628364558291174
+    "test_tv_distance": 0.2550929944189963,
+    "test_kl_teacher_student": 0.4810861954020658,
+    "test_brier_to_teacher": 0.27628364558291135
    },
    {
     "n_terms": 9,
-    "alpha": 3.3099171043876505,
+    "alpha": 3.309917104387645,
     "val_macro_f1_vs_teacher": 0.7911745158361264,
     "test_agreement": 0.7838479809976246,
     "test_macro_f1_vs_teacher": 0.761011220851059,
-    "test_tv_distance": 0.22966352350927036,
-    "test_kl_teacher_student": 0.3975733474510215,
-    "test_brier_to_teacher": 0.24264342955930512
+    "test_tv_distance": 0.2296635235092697,
+    "test_kl_teacher_student": 0.39757334745101836,
+    "test_brier_to_teacher": 0.24264342955930399
    },
    {
     "n_terms": 9,
-    "alpha": 2.7320194308517673,
+    "alpha": 2.7320194308517634,
     "val_macro_f1_vs_teacher": 0.8107920214344704,
     "test_agreement": 0.7841873091279267,
     "test_macro_f1_vs_teacher": 0.7593490854494171,
-    "test_tv_distance": 0.23141907848030172,
-    "test_kl_teacher_student": 0.38111420365361126,
-    "test_brier_to_teacher": 0.2340871060676445
+    "test_tv_distance": 0.2314190784803008,
+    "test_kl_teacher_student": 0.3811142036536069,
+    "test_brier_to_teacher": 0.2340871060676439
    },
    {
     "n_terms": 12,
-    "alpha": 2.2550202724585984,
+    "alpha": 2.2550202724585953,
     "val_macro_f1_vs_teacher": 0.8501117695159693,
     "test_agreement": 0.7994570749915167,
     "test_macro_f1_vs_teacher": 0.790444102944746,
-    "test_tv_distance": 0.21339558138121992,
-    "test_kl_teacher_student": 0.41542495147125336,
-    "test_brier_to_teacher": 0.24704968180894324
+    "test_tv_distance": 0.21339558138121895,
+    "test_kl_teacher_student": 0.41542495147125386,
+    "test_brier_to_teacher": 0.24704968180894363
    },
    {
     "n_terms": 13,
-    "alpha": 1.8613031707515544,
+    "alpha": 1.8613031707515515,
     "val_macro_f1_vs_teacher": 0.8952883867435225,
     "test_agreement": 0.8629114353579912,
     "test_macro_f1_vs_teacher": 0.8577145890729905,
     "test_tv_distance": 0.1499774398761574,
-    "test_kl_teacher_student": 0.27354301570693157,
-    "test_brier_to_teacher": 0.1479147706769089
+    "test_kl_teacher_student": 0.27354301570693035,
+    "test_brier_to_teacher": 0.14791477067690878
    },
    {
     "n_terms": 23,
-    "alpha": 1.5363274271909664,
+    "alpha": 1.536327427190964,
     "val_macro_f1_vs_teacher": 0.9389510235240862,
     "test_agreement": 0.8768238887003733,
     "test_macro_f1_vs_teacher": 0.8742179650493117,
-    "test_tv_distance": 0.12503829467847605,
-    "test_kl_teacher_student": 0.32268201322343537,
-    "test_brier_to_teacher": 0.13478936323739624
+    "test_tv_distance": 0.12503829467847594,
+    "test_kl_teacher_student": 0.3226820132234355,
+    "test_brier_to_teacher": 0.13478936323739638
    },
    {
     "n_terms": 35,
-    "alpha": 1.2680910883454704,
+    "alpha": 1.2680910883454684,
     "val_macro_f1_vs_teacher": 0.9549809191338684,
     "test_agreement": 0.8982015609093994,
     "test_macro_f1_vs_teacher": 0.8964489344012314,
-    "test_tv_distance": 0.10408866714884138,
-    "test_kl_teacher_student": 0.24627306172869742,
-    "test_brier_to_teacher": 0.1080364332893662
+    "test_tv_distance": 0.10408866714884096,
+    "test_kl_teacher_student": 0.24627306172869717,
+    "test_brier_to_teacher": 0.10803643328936591
    },
    {
     "n_terms": 44,
-    "alpha": 1.0466876916214276,
+    "alpha": 1.046687691621426,
     "val_macro_f1_vs_teacher": 0.9285573521966374,
     "test_agreement": 0.8985408890397014,
     "test_macro_f1_vs_teacher": 0.896974643244122,
-    "test_tv_distance": 0.09909662655692764,
-    "test_kl_teacher_student": 0.2347484664210745,
-    "test_brier_to_teacher": 0.10183480768655169
+    "test_tv_distance": 0.09909662655692927,
+    "test_kl_teacher_student": 0.23474846642107905,
+    "test_brier_to_teacher": 0.10183480768655398
    },
    {
     "n_terms": 57,
-    "alpha": 0.8639404013328476,
+    "alpha": 0.8639404013328462,
     "val_macro_f1_vs_teacher": 0.9338358004402117,
     "test_agreement": 0.9056667797760435,
     "test_macro_f1_vs_teacher": 0.905246241666175,
-    "test_tv_distance": 0.09287881638684523,
-    "test_kl_teacher_student": 0.2215713389559717,
-    "test_brier_to_teacher": 0.09657858268636237
+    "test_tv_distance": 0.09287881638684671,
+    "test_kl_teacher_student": 0.2215713389559741,
+    "test_brier_to_teacher": 0.09657858268636388
    },
    {
     "n_terms": 71,
-    "alpha": 0.7131000230822638,
+    "alpha": 0.7131000230822627,
     "val_macro_f1_vs_teacher": 0.9344322077612093,
     "test_agreement": 0.9165252799457075,
     "test_macro_f1_vs_teacher": 0.9168252895121821,
-    "test_tv_distance": 0.08210138131734059,
-    "test_kl_teacher_student": 0.19407161832310546,
-    "test_brier_to_teacher": 0.0829839246069666
+    "test_tv_distance": 0.08210138131734036,
+    "test_kl_teacher_student": 0.1940716183231037,
+    "test_brier_to_teacher": 0.08298392460696605
    },
    {
     "n_terms": 88,
-    "alpha": 0.5885957435668211,
+    "alpha": 0.5885957435668202,
     "val_macro_f1_vs_teacher": 0.9447621778082455,
     "test_agreement": 0.9300984051577876,
     "test_macro_f1_vs_teacher": 0.9284571918761864,
-    "test_tv_distance": 0.06953699530304347,
-    "test_kl_teacher_student": 0.11786203325356866,
-    "test_brier_to_teacher": 0.059792716772768664
+    "test_tv_distance": 0.0695369953030439,
+    "test_kl_teacher_student": 0.11786203325356436,
+    "test_brier_to_teacher": 0.05979271677276819
    },
    {
     "n_terms": 99,
-    "alpha": 0.4858293901709955,
+    "alpha": 0.48582939017099475,
     "val_macro_f1_vs_teacher": 0.947241857757609,
     "test_agreement": 0.9338310145911096,
     "test_macro_f1_vs_teacher": 0.9327255385867849,
-    "test_tv_distance": 0.06282729240420003,
-    "test_kl_teacher_student": 0.10824814200266793,
-    "test_brier_to_teacher": 0.05423604216083344
+    "test_tv_distance": 0.06282729240420028,
+    "test_kl_teacher_student": 0.10824814200266733,
+    "test_brier_to_teacher": 0.054236042160833525
    },
    {
     "n_terms": 122,
-    "alpha": 0.40100561197334883,
+    "alpha": 0.4010056119733482,
     "val_macro_f1_vs_teacher": 0.9447847920386652,
     "test_agreement": 0.9416355615880556,
     "test_macro_f1_vs_teacher": 0.9405543782406766,
-    "test_tv_distance": 0.0590059785907149,
-    "test_kl_teacher_student": 0.09922139638284305,
-    "test_brier_to_teacher": 0.05024031947085359
+    "test_tv_distance": 0.059005978590714776,
+    "test_kl_teacher_student": 0.09922139638284329,
+    "test_brier_to_teacher": 0.05024031947085369
    },
    {
     "n_terms": 149,
-    "alpha": 0.330991710438765,
+    "alpha": 0.3309917104387645,
     "val_macro_f1_vs_teacher": 0.9495405528461606,
     "test_agreement": 0.9426535459789617,
     "test_macro_f1_vs_teacher": 0.9416330367487764,
-    "test_tv_distance": 0.057917475647340906,
-    "test_kl_teacher_student": 0.10658596345965543,
-    "test_brier_to_teacher": 0.048904020783546914
+    "test_tv_distance": 0.057917475647338616,
+    "test_kl_teacher_student": 0.10658596345965428,
+    "test_brier_to_teacher": 0.04890402078354449
    },
    {
     "n_terms": 172,
-    "alpha": 0.27320194308517676,
+    "alpha": 0.27320194308517637,
     "val_macro_f1_vs_teacher": 0.9552184393947374,
     "test_agreement": 0.9460468272819816,
     "test_macro_f1_vs_teacher": 0.945156986100184,
-    "test_tv_distance": 0.05580567252988488,
-    "test_kl_teacher_student": 0.10617155354422139,
-    "test_brier_to_teacher": 0.0465386116685843
+    "test_tv_distance": 0.05580567252988498,
+    "test_kl_teacher_student": 0.10617155354422342,
+    "test_brier_to_teacher": 0.04653861166858419
    },
    {
     "n_terms": 187,
-    "alpha": 0.2255020272458599,
+    "alpha": 0.22550202724585958,
     "val_macro_f1_vs_teacher": 0.9487304247108205,
     "test_agreement": 0.9474041398031897,
     "test_macro_f1_vs_teacher": 0.9464713576998923,
-    "test_tv_distance": 0.05601271765515115,
-    "test_kl_teacher_student": 0.11387001409920561,
-    "test_brier_to_teacher": 0.048638749906901035
+    "test_tv_distance": 0.05601271765515131,
+    "test_kl_teacher_student": 0.11387001409921128,
+    "test_brier_to_teacher": 0.04863874990690192
    },
    {
-    "n_terms": 210,
-    "alpha": 0.18613031707515543,
+    "n_terms": 209,
+    "alpha": 0.18613031707515515,
     "val_macro_f1_vs_teacher": 0.9598265747399796,
     "test_agreement": 0.9463861554122837,
     "test_macro_f1_vs_teacher": 0.9451533014874061,
-    "test_tv_distance": 0.05548338422376133,
-    "test_kl_teacher_student": 0.10859770155645873,
-    "test_brier_to_teacher": 0.04788432882544052
+    "test_tv_distance": 0.05548338420369231,
+    "test_kl_teacher_student": 0.10859770147350628,
+    "test_brier_to_teacher": 0.047884328790119
    },
    {
     "n_terms": 242,
-    "alpha": 0.15363274271909663,
+    "alpha": 0.15363274271909638,
     "val_macro_f1_vs_teacher": 0.960835458347331,
     "test_agreement": 0.9474041398031897,
     "test_macro_f1_vs_teacher": 0.9462209888394139,
-    "test_tv_distance": 0.05667957752354693,
-    "test_kl_teacher_student": 0.10179032076587081,
-    "test_brier_to_teacher": 0.04859430850457743
+    "test_tv_distance": 0.05667957752354259,
+    "test_kl_teacher_student": 0.10179032076586705,
+    "test_brier_to_teacher": 0.048594308504571686
    },
    {
     "n_terms": 274,
-    "alpha": 0.12680910883454707,
+    "alpha": 0.12680910883454688,
     "val_macro_f1_vs_teacher": 0.9567128040909125,
     "test_agreement": 0.9385816084153377,
     "test_macro_f1_vs_teacher": 0.9378799760333849,
-    "test_tv_distance": 0.06302067544794095,
-    "test_kl_teacher_student": 0.16726372364061085,
-    "test_brier_to_teacher": 0.06558356333776119
+    "test_tv_distance": 0.06302067544793721,
+    "test_kl_teacher_student": 0.1672637236403593,
+    "test_brier_to_teacher": 0.06558356333776144
    },
    {
     "n_terms": 317,
-    "alpha": 0.10466876916214277,
+    "alpha": 0.1046687691621426,
     "val_macro_f1_vs_teacher": 0.9620124195299815,
     "test_agreement": 0.9395995928062436,
     "test_macro_f1_vs_teacher": 0.9388995927443803,
-    "test_tv_distance": 0.062383556793873605,
-    "test_kl_teacher_student": 0.17020252054349277,
-    "test_brier_to_teacher": 0.06445778835361403
+    "test_tv_distance": 0.06238355679387364,
+    "test_kl_teacher_student": 0.17020252054354654,
+    "test_brier_to_teacher": 0.06445778835361672
    },
    {
     "n_terms": 352,
-    "alpha": 0.08639404013328474,
+    "alpha": 0.08639404013328464,
     "val_macro_f1_vs_teacher": 0.9706735083294175,
     "test_agreement": 0.9395995928062436,
     "test_macro_f1_vs_teacher": 0.938973341707564,
-    "test_tv_distance": 0.06181375169335244,
-    "test_kl_teacher_student": 0.1579720590580407,
-    "test_brier_to_teacher": 0.0636937706248173
+    "test_tv_distance": 0.06181375169335219,
+    "test_kl_teacher_student": 0.15797205905876022,
+    "test_brier_to_teacher": 0.06369377062482313
    },
    {
     "n_terms": 410,
-    "alpha": 0.07131000230822641,
+    "alpha": 0.07131000230822628,
     "val_macro_f1_vs_teacher": 0.9578304746965793,
     "test_agreement": 0.9450288428910757,
     "test_macro_f1_vs_teacher": 0.9435896191032089,
-    "test_tv_distance": 0.05483235331568278,
-    "test_kl_teacher_student": 0.11944484732670073,
-    "test_brier_to_teacher": 0.04972876659246876
+    "test_tv_distance": 0.05483235331565428,
+    "test_kl_teacher_student": 0.119444847326574,
+    "test_brier_to_teacher": 0.04972876659244368
    },
    {
     "n_terms": 466,
-    "alpha": 0.058859574356682105,
+    "alpha": 0.058859574356682015,
     "val_macro_f1_vs_teacher": 0.9617395687779208,
     "test_agreement": 0.9392602646759416,
     "test_macro_f1_vs_teacher": 0.9384436149755159,
-    "test_tv_distance": 0.06217797643686796,
-    "test_kl_teacher_student": 0.22618106904214622,
-    "test_brier_to_teacher": 0.06450182606148293
+    "test_tv_distance": 0.062177976436832705,
+    "test_kl_teacher_student": 0.22618106904211244,
+    "test_brier_to_teacher": 0.06450182606146956
    }
   ],
   "top_pairs": [
@@ -476,74 +476,74 @@
      "041 tGravityAcc-mean()-X",
      "057 tGravityAcc-energy()-X"
     ],
-    0.039283033384877264
+    0.039283033385030044
    ],
    [
     [
      "010 tBodyAcc-max()-X",
      "042 tGravityAcc-mean()-Y"
     ],
-    0.03321142830263856
+    0.03321142830299255
    ],
    [
     [
      "042 tGravityAcc-mean()-Y",
      "106 tBodyAccJerk-arCoeff()-X,1"
     ],
-    0.026063872573426117
+    0.026063872573724705
    ],
    [
     [
      "042 tGravityAcc-mean()-Y",
      "093 tBodyAccJerk-min()-X"
     ],
-    0.024370026996908593
+    0.02437002699635531
    ],
    [
     [
      "042 tGravityAcc-mean()-Y",
      "180 tBodyGyroJerk-iqr()-X"
     ],
-    0.022212181377906932
+    0.022212181377031483
    ],
    [
     [
      "042 tGravityAcc-mean()-Y",
      "105 tBodyAccJerk-entropy()-Z"
     ],
-    0.01618965860810644
+    0.016189658608273934
    ],
    [
     [
      "057 tGravityAcc-energy()-X",
      "059 tGravityAcc-energy()-Z"
     ],
-    0.01602852633520311
+    0.01602852633516106
    ],
    [
     [
      "058 tGravityAcc-energy()-Y",
      "180 tBodyGyroJerk-iqr()-X"
     ],
-    0.015291909631435324
+    0.015291909631465971
    ],
    [
     [
      "054 tGravityAcc-min()-Y",
      "093 tBodyAccJerk-min()-X"
     ],
-    0.01486236945042283
+    0.014862369449917772
    ],
    [
     [
      "269 fBodyAcc-std()-X",
      "446 fBodyGyro-entropy()-X"
     ],
-    0.01442241793473834
+    0.014422417934841537
    ]
   ],
-  "sum_S1": 0.5835053945081397,
-  "cov_indices_sum": 1.0000000000000007,
+  "sum_S1": 0.5835053945093001,
+  "cov_indices_sum": 1.0000000000000018,
   "frac_negative_cov_total": 0.19387755102040816
  },
  "cart": {
@@ -689,20 +689,20 @@
  },
  "agreement": {
   "PCE(ST) vs SHAP": {
-   "spearman": 0.4882185023742494,
-   "kendall_tau_b": 0.38198886844875163,
+   "spearman": 0.48822449077694097,
+   "kendall_tau_b": 0.3820056296979157,
    "top10_jaccard": 0.3333333333333333,
    "top20_jaccard": 0.25
   },
   "PCE(S1) vs SHAP": {
-   "spearman": 0.46068923606509066,
-   "kendall_tau_b": 0.35728870753395026,
+   "spearman": 0.46069527245350594,
+   "kendall_tau_b": 0.3573056410493195,
    "top10_jaccard": 0.17647058823529413,
    "top20_jaccard": 0.14285714285714285
   },
   "PCE(cov) vs SHAP": {
-   "spearman": 0.49597164741641014,
-   "kendall_tau_b": 0.3876374094170373,
+   "spearman": 0.4959698109729181,
+   "kendall_tau_b": 0.3876541706662013,
    "top10_jaccard": 0.25,
    "top20_jaccard": 0.25
   },
@@ -716,7 +716,7 @@
    "spearman": 0.20099168243032706,
    "kendall_tau_b": 0.16352837042467075,
    "top10_jaccard": 0.1111111111111111,
-   "top20_jaccard": 0.14285714285714285
+   "top20_jaccard": 0.17647058823529413
   },
   "PCE(ST) vs CART": {
    "spearman": 0.17633639515377733,
@@ -728,14 +728,14 @@
  "agreement_groups": {
   "n_groups": 18,
   "PCE(ST) vs SHAP": {
-   "spearman": 0.7543859649122806,
-   "kendall_tau_b": 0.5686274509803922,
+   "spearman": 0.762641898864809,
+   "kendall_tau_b": 0.5816993464052289,
    "top3_jaccard": 0.2,
    "top5_jaccard": 0.42857142857142855
   },
   "PCE(cov) vs SHAP": {
-   "spearman": 0.8204334365325078,
-   "kendall_tau_b": 0.6470588235294119,
+   "spearman": 0.8286893704850361,
+   "kendall_tau_b": 0.6601307189542485,
    "top3_jaccard": 0.2,
    "top5_jaccard": 0.6666666666666666
   },
@@ -746,8 +746,8 @@
    "top5_jaccard": 0.1111111111111111
   },
   "PCE(ST) vs CART": {
-   "spearman": 0.47243943567190305,
-   "kendall_tau_b": 0.3734080224074693,
+   "spearman": 0.4871677634026818,
+   "kendall_tau_b": 0.3889666900077805,
    "top3_jaccard": 0.5,
    "top5_jaccard": 0.25
   }
@@ -757,12 +757,12 @@
   "note": "student training rows resampled with replacement; teacher, bases and hyper-parameters fixed",
   "pce_rank_stability": {
    "spearman": [
-    0.790893799138933,
-    0.01796883275675003
+    0.7908938170819532,
+    0.0179688195381702
    ],
    "kendall_tau_b": [
-    0.7289564947179186,
-    0.01736720076869361
+    0.7289606579860867,
+    0.017364198104959074
    ],
    "top10_jaccard": [
     0.6067266067266066,
@@ -787,8 +787,8 @@
     0.06747012632270617
    ],
    "top20_jaccard": [
-    0.39613209268381677,
-    0.058123726463068494
+    0.44781833747350985,
+    0.07380533790279288
    ]
   },
   "pce_test_agreement": [
@@ -940,5 +940,5 @@
   "frac_pairs_absr_gt_0_5": 0.41733511586452765,
   "max_abs_r": 1.0
  },
- "runtime_sec": 159.03096675872803
+ "runtime_sec": 249.2711205482483
 }
