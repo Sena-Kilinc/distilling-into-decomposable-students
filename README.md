@@ -1,6 +1,6 @@
 # Distilling into Decomposable Students
 
-Code and results for the PhD candidate assignment *"Knowledge Distillation into Analytically Decomposable Students: Explainable AI via Polynomial Chaos Expansion and HDMR"* (TÜBİTAK 1001 project, PI Assoc. Prof. Dr. Gülşen Taşkın, ITU). Author: Sena Kılınç.
+*"Knowledge Distillation into Analytically Decomposable Students: Explainable AI via Polynomial Chaos Expansion and HDMR"* Author: Sena Kılınç.
 
 A frozen **LightGBM** teacher is distilled into two interpretable students. Both are evaluated on two real tabular datasets: **Online Shoppers Purchasing Intention** (17 features, binary) and **UCI-HAR** (561 features, 6 classes).
 
@@ -60,7 +60,7 @@ Seeds are fixed. Two complete runs gave identical results in our environment. Li
 
 ## Key limitation
 
-Coefficient-based Sobol' indices assume independent inputs. We measure how far this fails, as ρ = Σc² / Var, which equals 1 for an orthonormal basis. ρ is 0.85 on OSPI and 4.70 on HAR, so on HAR the analytic indices are not valid variance shares. Other limitations:
+Coefficient-based Sobol' indices assume independent inputs. I measure how far this fails, as ρ = Σc² / Var, which equals 1 for an orthonormal basis. ρ is 0.85 on OSPI and 4.70 on HAR, so on HAR the analytic indices are not valid variance shares. Other limitations:
 - one teacher family, one HAR split, 5 OSPI splits and 5 bootstraps;
 - HAR pairwise terms are restricted to the 30 inputs selected by training-only screening;
 - the CART student is fitted on real training rows only (no TREPAN-style query sampling).
